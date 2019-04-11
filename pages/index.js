@@ -1,21 +1,30 @@
 import withLayout from '../components/layout';
 import Link from 'next/link'
-const PostLink = props => (
-    <li>
-      <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
-      <a>{props.title}</a>
-    </Link>
-    </li>
-  )
+import Intro from '../components/intro'
+import '../styles/main.scss'
+
 const Home = () => {
     return (
         <div>
-            <ul>
-            <PostLink id="eh " title="Helloo aya" />
-            <PostLink id="wow" title="Helloo Ali" />
-            <PostLink id="hom" title="Helloo Mobina" />
-            <p>Hello im Home</p>
-            </ul>
+         <Intro/>
+          <section className="design-process">
+            <div>design process</div>
+          </section>
+          <section className="works">
+            <div>works</div>
+          </section>
+          <section className="subscribe">
+            <div>subscribe</div>
+          </section>
+          <section className="article">
+            <div>article post</div>
+          </section>
+          <section className="about-me">
+            <div>about me</div>
+          </section>
+          <footer>
+            <div>footer</div>
+          </footer>
         </div>
     )
 }
