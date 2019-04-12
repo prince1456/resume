@@ -1,15 +1,16 @@
 import withLayout from '../components/layout';
 import Link from 'next/link'
 import Intro from '../components/intro'
+import DesignProcess from '../components/design-process'
+import Header from '../components/header'
 import '../styles/main.scss'
 
 const Home = () => {
     return (
         <div>
-         <Intro/>
-          <section className="design-process">
-            <div>design process</div>
-          </section>
+          <Header />
+          <Intro />
+           <DesignProcess />
           <section className="works">
             <div>works</div>
           </section>

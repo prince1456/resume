@@ -1,0 +1,14 @@
+.headerNav {
+    position: absolute;
+    width: 100%;
+
+    ul {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        color: 'red'
+    }
+}
